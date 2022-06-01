@@ -1,0 +1,16 @@
+:root {
+    --fondMontserrat:'Montserrat', sans-serif;
+    --fondRoboto: 'Roboto', sans-serif;
+    --fondCrimson: 'Crimson Pro', serif;
+    --fondRubik: 'Rubik', sans-serif;
+
+    --colorMain: #720418;
+    --colorBlack: #241400;
+    --colorWhite: #ffffff;
+    --colorActive: #E16A00;
+    --colorBorder: #cecece;
+    --colorOrange: #ffc107;
+    --colorBlackHeader: #333333;
+    --colorButton: #FF8B00;
+
+}

@@ -1,0 +1,63 @@
+.store-mobile{
+    margin-top: 150px;
+}
+
+.store-img{
+    margin-bottom: 150px;
+    width: 570px;
+    height: 310px;
+    object-fit: cover;
+    margin-top:80px;
+}
+.store-img img{
+    display: block;
+    margin: 0 auto;
+}
+#store-about{
+    /* margin-top: 150px; */
+    font-family: var(--fondMontserrat);
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 70.63px;
+    color: var(--colorBlack);
+}
+
+#about-text {
+    font-family: var(--fondMontserrat);
+    margin-top: 11px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35.31px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .store-img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top:10px;
+        padding:0 20px;
+    }
+    .store-img img{
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+    }
+
+    .about-store {
+        /* display: inherit; */
+        text-align: center;
+        flex-direction: column-reverse !important;
+    }
+
+    .col-5 {
+        max-width: 50% !important;
+        flex-direction: column-reverse;
+    }
+
+    .store-mobile {
+        flex-direction: column-reverse !important;
+    }
+}

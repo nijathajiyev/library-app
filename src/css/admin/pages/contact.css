@@ -1,0 +1,35 @@
+.contact {
+    margin-top: 154px;
+    margin-left: 33px;
+    margin-bottom: 150px;
+}
+
+.contact h1 {
+    font-family: var(--fondMontserrat);
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--colorBlackHeader);
+    margin-bottom: 17px;
+}
+
+.table2 {
+    width: 90% !important;
+}
+
+.tbl-b {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: var(--colorWhite);
+}
+
+.table-striped tbody tr:nth-of-type(even){
+    background-color: #F9FAFC;
+}
+
+@media screen and (max-width: 320px) {
+    .contact{
+    overflow-x: scroll;
+    }
+}

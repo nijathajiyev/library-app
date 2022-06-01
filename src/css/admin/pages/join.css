@@ -1,0 +1,35 @@
+.joinUs{
+    margin-left: 33px;
+    margin-top: 136px;
+  }
+  
+  .joinUs h1{
+    font-family: var(--fondMontserrat);
+      font-weight: 600;
+      font-size: 30px;
+      color: var(--colorBlackHeader);
+      margin-bottom: 17px;
+  }
+  
+  .table1{
+    width: 50% !important;
+  }
+  
+  .tbl{
+    background-color: #720418;
+  }
+  
+  .tbl th{
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .tbl-b2{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 320px) {
+    .table1{
+      width: 30vh !important;
+    }
+}

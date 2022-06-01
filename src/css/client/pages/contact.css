@@ -1,0 +1,107 @@
+#contact h1 {
+  margin-top: 185px;
+  font-family: var(--fondMontserrat);
+  font-weight: 900;
+  line-height: 70.63px;
+  font-size: 36px;
+  color: var(--colorBlackHeader);
+}
+
+#alertMessage strong{
+  font-family: var(--fondMontserrat);
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--colorBlackHeader);
+  margin-bottom: 10px;
+}
+
+#alertMessage h4{
+  font-family: var(--fondMontserrat);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--colorBlackHeader);
+  margin-top: 10px;
+}
+
+.iti {
+  width: 100%;
+}
+.iti__flag-container {
+  padding-left: 50px;
+}
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+  padding-right: 6px;
+  padding-left: 100px;
+  margin-left: 0;
+}
+
+#input-fullName,
+#input-address,
+#input-email,
+#input-phone,
+#contact-btn {
+  margin-top: 28px;
+  width: 100%;
+  height: 75px;
+  border: 1px solid var(--colorBorder);
+}
+
+#contact-btn {
+  font-family: var(--fondCrimson);
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  line-height: 38.99px;
+  color: var(--colorWhite);
+  background-color: var(--colorActive);
+}
+
+#input-fullName::placeholder,
+#input-address::placeholder,
+#input-email::placeholder,
+#input-phone::placeholder {
+  font-family: var(--fondCrimson);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 30px;
+  color: #797667;
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 992px) {
+.contact-input {
+    display: initial !important;
+    flex-direction: column-reverse !important;
+}
+.col-6 {
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column-reverse !important;
+}
+.iti__flag-container {
+    padding-left: 10px;
+}
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+    padding-right: 6px;
+    padding-left: 50px;
+    margin-left: 0;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+  #contact h1{
+    text-align: center;
+    margin-top: 51px;
+  }
+}

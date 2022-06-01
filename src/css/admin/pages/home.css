@@ -1,0 +1,388 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--colorMain);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(7, 16, 7, 0.8);
+}
+
+.adminPanel {
+  height: 100vh;
+  background-color: var(--colorMain);
+  position: relative;
+}
+
+.adminPanel img {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login {
+  width: 662px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--colorWhite);
+  /* padding: 54px; */
+}
+
+.login-header {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  color: #000000;
+  margin-top: 69px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+#loginForm .form-group {
+  width: 552px;
+  height: 74.54px;
+  background: var(--colorWhite);
+  border: 1px solid var(--colorBorder);
+  margin-bottom: 34px;
+}
+
+#loginForm input {
+  padding-left: 51px;
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #797667;
+  width: 100%;
+  height: 100%;
+  background: var(--colorWhite);
+  border: 1px solid var(--colorBorder);
+}
+
+#loginForm input::placeholder {
+  padding-left: 51px;
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #797667;
+}
+.loginBtn {
+  font-family: var(--fondCrimson);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  width: 552px;
+  height: 74px;
+  background: var(--colorActive);
+  border: 1px solid var(--colorBorder);
+  border-radius: 5px;
+  color: var(--colorWhite);
+}
+
+.icon-admin,
+.icon-admin2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 48px;
+  margin-right: 58px;
+}
+
+.icon-admin p,
+.icon-admin2 p {
+  padding-left: 8.26px;
+  font-family: var(--fondRoboto);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.head-icon {
+  margin-top: 16px;
+  display: flex;
+  cursor: pointer;
+}
+
+.icon-texts a {
+  width: 130px;
+  height: 10px;
+  color: var(--colorMain) !important;
+  font-family: var(--fondMontserrat);
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.icon-texts span {
+  width: 127px;
+  display: block;
+  margin-left: 1px;
+  margin-top: -4px;
+  background-color: rgba(0, 0, 0, 0.59);
+  border: 1px solid rgba(0, 0, 0, 0.59);
+}
+
+.icon-texts p {
+  display: flex;
+  margin-left: 2px;
+  font-family: var(--fondMontserrat);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--colorBlack);
+}
+
+/* Search book */
+.addBook {
+  margin-bottom: 81px;
+  margin-left: 33px;
+}
+
+#addBook h2 {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--colorBlackHeader);
+  margin-bottom: 26px;
+  margin-left: 33px;
+  margin-top: 127px;
+}
+
+.searchBook {
+  margin-bottom: 6px;
+  margin-left: 33px;
+}
+
+.searchBookHeader {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--colorBlackHeader);
+  margin-bottom: 6px;
+}
+
+.searchInput input[type="search"] {
+  height: 41px;
+  border: 2px solid rgba(57, 31, 0, 0.48);
+  border-radius: 34px;
+  margin-right: 7px;
+  margin-bottom: 6px;
+  padding-left: 33px;
+}
+
+#searchBtn {
+  width: 63px;
+  height: 40px;
+  background: var(--colorButton);
+  border-radius: 34px;
+}
+
+/* Answer search api */
+.apiBooks {
+  height: 160px;
+  background: #f1f0f0;
+  border-radius: 35px;
+  padding: 17px 37px;
+}
+
+.apiBooks li {
+  padding: 10px 0;
+}
+
+.apiBooksList {
+  height: 100%;
+}
+
+.apiBooksList::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+.apiBooksList li {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.apiBooksList li p {
+  font-size: 13px;
+  color: #bcbcbc;
+  line-height: 25px;
+}
+
+.apiBooksList li img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Add book form */
+#bookForm h3 {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 18px;
+  margin-left: 33px;
+  margin-top: 81px;
+}
+
+.form-check {
+  margin-top: 10px;
+}
+
+.form-check label {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.addForm {
+  width: 87%;
+  background-color: var(--colorWhite);
+  border-radius: 20px;
+  padding: 16px 30px;
+  margin-left: 33px;
+}
+
+.addForm label {
+  font-family: var(--fondRoboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+#addForm input,
+textarea {
+  font-family: var(--fondRoboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 12px;
+  gap: 10px;
+  background: var(--colorWhite);
+  border: 1px solid #e2e6ee;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  color: #030102;
+}
+
+.addCategory {
+  display: flex;
+}
+
+.addCategoySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #000; */
+  box-shadow: 0px 0px 10px 0 lightgray;
+  background-color: var(--colorWhite);
+  padding: 15px;
+}
+
+.addCategoryIcon {
+  display: inline-block;
+  color: green;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.addCategoryBtn {
+  border: 1px solid var(--colorOrange);
+  width: 100%;
+  color: var(--colorOrange);
+}
+
+.addCategoryBtn:hover {
+  background-color: var(--colorOrange);
+  color: #000;
+}
+
+#my-select option {
+  font-family: var(--fondRoboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #030102;
+}
+
+#addBookFirabase {
+  font-family: var(--fondRoboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  padding: 12px 0;
+  color: var(--colorWhite);
+  background: var(--colorButton);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .adminPanel img {
+    margin-top: 17px;
+  }
+
+  .login {
+    width: 229px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--colorWhite);
+    /* padding: 54px; */
+  }
+
+  .login-header {
+    font-size: 28px;
+    margin-top: 27px;
+  }
+
+  #loginForm .form-group {
+    width: 192.61px;
+    height: 40.84px;
+    margin-bottom: 20px;
+  }
+
+  #loginForm input::placeholder {
+    padding-left: 11px;
+  }
+
+  .loginBtn {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 43px;
+    width: 193.49px;
+    height: 37.7px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mobile-adm-head {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #addBook h2 {
+    margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,221 @@
+.activeCategory {
+  color: var(--colorButton);
+  border-bottom: 1px solid  var(--colorButton);
+}
+
+.owl-dots {
+  display: none;
+}
+
+.owl-nav {
+  margin-left: -28px;
+  font-size: 50px;
+  color: var(--mainRedColor);
+  position: absolute;
+  width: 104%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-nav button:hover {
+  background: transparent !important;
+  color: #000 !important;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  margin-right: -30px !important;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  margin-left: -30px !important;
+}
+
+/* categoryList-section */
+.categoryList-section {
+  margin-top: 127px;
+}
+
+.categoryList {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  overflow: auto;
+  width: 400px;
+}
+
+.categoryList-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  padding-left: 0;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.categoryList-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+.categoryList::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.categoryList::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+.categoryList::-webkit-scrollbar-thumb {
+  background: var(--colorMain);
+  border-radius: 10px;
+
+}
+
+.categoryList ::-webkit-scrollbar-thumb:hover {
+  background: rgba(7, 16, 7, 0.8);
+}
+
+/* All catalog , Click Category */
+
+.categoryList-section h3 {
+  font-family: var(--fondMontserrat);
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--colorBlack);
+
+}
+
+#books h3 {
+  font-family: var(--fondMontserrat);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--colorBlack);
+  margin-bottom: 50px;
+  line-height: 49.05px;
+  text-align: center;
+}
+
+.books-1 {
+  margin-top: 61px;
+  margin-bottom: 128px;
+}
+
+.books-2 {
+  margin-bottom: 171px;
+}
+
+.books-3 {
+  margin-bottom: 208px;
+}
+
+.card{
+  margin: auto;
+}
+
+.card-item {
+  width: 184px !important;
+  padding: 24px 24.73px 17px 25px;
+  margin-right: 62px;
+  background: var(--colorWhite);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.card-item img {
+  display: block;
+  width: 134px;
+  height: 190px;
+  object-fit: cover;
+  margin-bottom: 47px;
+
+}
+
+.card-item .newBook {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 9px;
+  width: 47px;
+  height: 13.58px;
+  background: #EB5757;
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+.card-item h5 {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--colorBlack);
+}
+
+.card-item a {
+  display: block;
+  margin: 0 auto;
+  background: var(--colorActive);
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border: none;
+  border-radius: 3px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--colorWhite);
+}
+
+.card-item a:hover {
+  background: var(--colorButton);
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color:var(--colorButton) !important; 
+  border-color: var(--colorButton) !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+#booksLoading {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+.activeColor{
+  color: red;
+}
+
+
+@media only screen and (max-width :576px){
+  .books-1 {
+    margin-top: 23px;
+    margin-bottom: 173px;
+  }
+  .owl-nav {
+    margin-left: 0;
+    width: 84%;
+    font-size: 30px;
+  }
+  .categoryList-section h3 {
+  margin-bottom: 9px;
+  
+  }
+  .owl-carousel .owl-nav button.owl-next{
+    margin-right: 0px !important;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 0px !important;
+  }
+}

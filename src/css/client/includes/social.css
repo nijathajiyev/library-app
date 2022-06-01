@@ -1,0 +1,34 @@
+.socialmedia {
+  height: 49px;
+}
+
+.socialmedia-title {
+  font-family: var(--fondMontserrat);
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--colorBlack);
+}
+
+.socialmedia-icons img {
+  width: 80px;
+  margin-bottom: 10%;
+}
+
+.socialmedia-section {
+  margin-top: 12%;
+
+}
+
+@media screen and (max-width: 320px) {
+  .socialmedia-title {
+    font-family: var(--fondMontserrat);
+    font-weight: 900;
+    font-size: 18px !important;
+    color: var(--colorBlack);
+  }
+
+  .socialmedia-icons img {
+    width: 37.54px;
+    margin-right: 26.46px;
+  }
+}

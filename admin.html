@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./src/img/title_logo.svg" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="./src/css/admin/style.css">
+   <title>Admin panel | Library Book Store</title>
+</head>
+
+<body>
+   <!-- Login Page -->
+   <div class="adminPanel">
+      <div class="container-fluid">
+         <img src="./src/img/logo.svg" alt="">
+         <div class="login">
+            <h3 class="login-header">Welcome Admin</h3>
+            <form action="#" method="" id="loginForm">
+               <div class="form-group mx-auto">
+                  <input type="text" class="form-control" placeholder="Username" id="username" name="username" />
+               </div>
+               <div class="form-group mx-auto">
+                  <input type="password" class="form-control" placeholder="Password" id="password" name="password" />
+               </div>
+               <button class="btn mx-auto d-block loginBtn" type="button">Join</button>
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- Search Book -->
+   <div id="bookSearchPage" class="container-fluid">
+      <div class="row">
+         <div class="mobile-adm-head col-lg-3 px-0">
+            <nav class="navbar admin-list navbar-expand-lg">
+               <button class="navbar-toggler ham-icon-mob" type="button" data-toggle="modal" data-target="#navbarNavs"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                     <img src="./src/img/ham.svg" />
+                  </span>
+               </button>
+               <div class="collapse admin-main navbar-collapse" id="navbarNav">
+                  <div class="admin-headr">
+                     <div id="adm-img">
+                        <img src="./src/img/img2.svg" alt="">
+                     </div>
+                     <div class="admin-txt">
+                        <h1>LIBRARY</h1>
+                        <span></span>
+                        <p>Admin Panel</p>
+                     </div>
+                  </div>
+                  <div class="admin-bdy">
+                     <div class="bdy-1">
+                        <img src="./src/img/img3.svg" alt="">
+                        <a href="#addBook">Home</a>
+                     </div>
+                     <div class="bdy-2">
+                        <img src="./src/img/img3.svg" alt="">
+                        <a href="#aboutStore">About</a>
+                     </div>
+                     <div class="bdy-3">
+                        <img src="./src/img/img3.svg" alt="">
+                        <a href="#joinUS">Join Us</a>
+                     </div>
+                     <div class="bdy-4">
+                        <img src="./src/img/img3.svg" alt="">
+                        <a href="#contact">Contact</a>
+                     </div>
+                     <div class="bdy-5">
+                        <img src="./src/img/img3.svg" alt="">
+                        <a href="#" class="logOut">Logout </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="modal fade" id="navbarNavs" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog adm-dialog">
+                     <div class="modal-content adm-content">
+                        <div class="modal-header adm-header">
+                           <div class="admin-headr2">
+                              <div id="adm-img-res">
+                                 <img src="./src/img/adm-res-img.svg" alt="">
+                              </div>
+                              <div class="admin-txt-res">
+                                 <h1>LIBRARY</h1>
+                                 <span></span>
+                                 <p>Admin Panel</p>
+                              </div>
+                           </div>
+                           <button type="button" class="close close-adm-mob" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>
+                        <div class="modal-body adm-body">
+                           <div class="admin-bdy-mob">
+                              <div class="bdy-1">
+                                 <img src="./src/img/img3.svg" alt="">
+                                 <a href="">Home</a>
+                              </div>
+                              <div class="bdy-2">
+                                 <img src="./src/img/img3.svg" alt="">
+                                 <a href="">About</a>
+                              </div>
+                              <div class="bdy-3">
+                                 <img src="./src/img/img3.svg" alt="">
+                                 <a href="">Join Us</a>
+                              </div>
+                              <div class="bdy-4">
+                                 <img src="./src/img/img3.svg" alt="">
+                                 <a href="">Contact</a>
+                              </div>
+                              <div class="bdy-5">
+                                 <img src="./src/img/img3.svg" alt="">
+                                 <a href="">Logout </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <div class="icon-main">
+               <div class="head-icon">
+                  <div id="icon-img">
+                     <img src="./src/img/img.svg" alt="">
+                  </div>
+                  <div class="icon-texts">
+                     <a>LIBRARY</a>
+                     <span></span>
+                     <p>Book store</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-9">
+            <div class="icon-admin2">
+               <img src="./src/img/join.svg" alt="">
+               <p>Admin</p>
+            </div>
+            <div id="addBook" class="row">
+               <div class="col-lg-6">
+                  <h2>Add Book</h2>
+                  <div class="searchBook">
+                     <p class="searchBookHeader">Search book</p>
+                     <div class="searchInput d-flex ">
+                        <input type="search" class="form-control" placeholder="Search book">
+                        <button class="btn btn-warning" id="searchBtn"><img src="./src/img/searchIcon.svg" alt=""></button>
+                     </div>
+                  </div>
+                  <div class="apiBooks">
+                     <div class="loading">
+                        <img class="rounded-circle" src="./src/img/Spinner-1s-200px.gif" width="45">
+                     </div>
+                     <ul class="apiBooksList">
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div id="bookForm" class="row">
+               <div class="col-lg-12">
+                  <h3>Book Form</h3>
+                  <div class="addForm">
+                     <form action="#" id="addForm">
+                        <div class="form-group">
+                           <label for="name">Book Name</label>
+                           <input type="text" class="form-control" placeholder="" id="name">
+                        </div>
+                        <div class="form-group">
+                           <label for="author">Author Name</label>
+                           <input type="text" class="form-control" placeholder="" id="author">
+                        </div>
+                        <div class="form-group">
+                           <label for="image">Book Image Url</label>
+                           <input type="text" class="form-control" placeholder="" id="image">
+                        </div>
+                        <div class="form-group">
+                           <label for="date">Book Year</label>
+                           <input type="number" class="form-control" placeholder="" id="date">
+                           <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="new" id="defaultCheck1">
+                              <label class="form-check-label" for="defaultCheck1">
+                                 New
+                              </label>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="description">Description</label>
+                           <textarea name="" maxlength="1000" id="description" cols="30" rows="3"
+                              class="form-control mb-1" style="resize: none"></textarea>
+                           <small id="descriptionCount"></small>
+                        </div>
+                        <div class="form-group addCategory">
+                           <label for="" class="mr-2">Book type</label>
+                           <i class="fa-solid fa-plus addCategoryIcon"></i>
+                           <div class="addCategoySection">
+                              <p class="mb-2">Add Type</p>
+                              <input type="text" class="form-control mb-2">
+                              <div id="validationServer03Feedback" class="invalid-feedback">
+                                 Please, write type of book
+                              </div>
+                              <button type="button" class="btn addCategoryBtn">add</button>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="my-select">Book Category</label>
+                           <select id="my-select" class="form-control" name="">
+                              <option value="">Selected</option>
+                           </select>
+
+                        </div>
+                        <button type="button" id="addBookFirabase" class="btn btn-warning w-100">Add</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div id="aboutStore" class="aboutStore">
+               <h1 id="about-s">About Store</h1>
+               <div class="store-body">
+                  <h3 id="title">Title</h3>
+                  <input type="text" id="store-inp1" placeholder="About Store">
+
+                  <h3 id="img">Book Image Url</h3>
+                  <input type="text" id="store-inp2" placeholder="https://image:url/">
+
+                  <h3 id="desc">Description</h3>
+                  <textarea type="text" class="form-control" rows="6" id="store-textarea"
+                     placeholder="We work without holidays and weekends! Resident...We work without holidays and weekends! Resident...We work without holidays and weekends! Resident..."></textarea>
+
+                  <button id="info-btn">About info add</button>
+               </div>
+            </div>
+            <div id="joinUS" class="joinUs">
+               <h1>Join Us</h1>
+               <table class="table table-striped table1">
+                  <thead class="tbl">
+                     <tr>
+                        <th scope="col-3">#</th>
+                        <th scope="col-4">Full Name</th>
+                        <th scope="col-4">Email address</th>
+                     </tr>
+                  </thead>
+                  <tbody class="tbl-b2">
+
+                  </tbody>
+               </table>
+            </div>
+            <div id="contact" class="contact">
+               <h1>Contact Us</h1>
+               <table class="table table2 table-striped">
+                  <thead class="tbl">
+                     <tr>
+                        <th scope="col-3">#</th>
+                        <th scope="col-4">Full Name</th>
+                        <th scope="col-4">Address</th>
+                        <th scope="col-4">Email address</th>
+                        <th scope="col-4">Phone Number</th>
+                     </tr>
+                  </thead>
+                  <tbody class="tbl-b">
+
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment-with-locales.min.js"
+      integrity="sha512-vFABRuf5oGUaztndx4KoAEUVQnOvAIFs59y4tO0DILGWhQiFnFHiR+ZJfxLDyJlXgeut9Z07Svuvm+1Jv89w5g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+   <script src="./src/js/db.js"></script>
+   <script src="./src/js/admin/index.js"></script>
+   <script src="./src/js/admin/about.js"></script>
+   <script src="./src/js/admin/join.js"></script>
+   <script src="./src/js/admin/contact.js"></script>
+</body>
+
+</html>

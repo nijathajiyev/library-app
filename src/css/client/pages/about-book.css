@@ -1,0 +1,160 @@
+.about-store{
+    margin-bottom:109px;
+}
+.backBtn {
+    width: 100px;
+    background-color: var(--colorActive);
+    color: var(--colorWhite);
+    font-family: var(--fondMontserrat);
+    font-weight: 900;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 100px;
+}
+
+.book-img{
+    width: 100%;
+    object-fit: cover;
+}
+.book-img img{
+    width:100%;
+    display: block;
+}
+#book-year {
+    display: block;
+    margin-top: 80px;
+    width: 69px;
+    height: 23px;
+    background-color: #2F80ED;
+    text-align: center;
+    color: var(--colorWhite);
+    font-family: var(--fondMontserrat);
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+#book-name,
+#book-time {
+    margin-top: 4px;
+    color: var(--colorBlack);
+    font-family: var(--fondMontserrat);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+#book-time {
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+#author-name,
+#book-header,
+#more-d {
+    color: var(--colorBlack);
+    font-family: var(--fondMontserrat);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#book-header,
+#more-d {
+    font-size: 18px;
+    width: 83%;
+}
+
+#store-input {
+    width: 55%;
+    height: 60px;
+    border: none;
+    box-shadow: 0px 0px 10px 1px #00000026;
+    border-radius: 5px;
+}
+
+#store-input::placeholder {
+    font-family: var(--fondRoboto);
+    font-weight: 300px;
+    font-size: 20px;
+    padding-left: 38px;
+}
+
+#store-btn-img {
+    background-color: var(--colorActive);
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 19px;
+}
+
+#store-btn-img img {
+    display: block;
+    margin: 17px auto;
+}
+
+.anonim1{
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 53px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 62%;
+    height: 167px;
+    border-radius: 5px;
+}
+
+#anonim1-head{
+    display: flex;
+}
+
+#anonim1-head h4{
+    font-family: var(--fondRubik);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 30px;
+    padding-left: 18px;
+    color: #232323;
+}
+
+#anonim1-head h5{
+    font-family: var(--fondRubik);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 28px;
+    padding-left: 18px;
+    color: #232323;
+}
+
+.anonim1 p{
+    font-family: var(--fondRubik);
+    font-weight: 400;
+    font-size: 17.5px;
+    line-height: 24px;
+    padding-left: 18px;
+    color: #232323;
+}
+
+#back-arrow{
+    height: 25px;
+    color: var(--colorWhite);
+}
+
+@media screen and (max-width: 992px) {
+    .about-store {
+        flex-direction: column-reverse;
+
+    }
+
+    .book-img {
+        margin-top: 100px;
+    }
+
+    #store-input{
+        width: 90%;
+    }
+
+    .anonim1{
+        width: 100%;
+    }
+}
